@@ -9,6 +9,10 @@ public class GameMaster : MonoBehaviour {
     public Vector2 lastCheckPointPos1;
     public Vector2 lastCheckPointPos2;
     public Vector2 lastCheckPointPos3;
+    public Vector2 lastCheckPointPos4;
+    public Vector2 lastCheckPointPos5;
+    public Vector2 lastCheckPointPos6;
+    public Vector2 lastCheckPointPos7;
 
     void Awake()
     {

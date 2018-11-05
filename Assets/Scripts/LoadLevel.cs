@@ -16,15 +16,15 @@ public class LoadLevel : MonoBehaviour {
         StartCoroutine(RandomAsynchronously());
     }
 
-    public void LoadScene(string levelName)
+    public void LoadScene(int levelIndex)
     {
         // PlayerControls.deathCount = 0;
-        StartCoroutine(LoadAsynchronously(levelName));
+        StartCoroutine(LoadAsynchronously(levelIndex));
     }
 
-    IEnumerator LoadAsynchronously(string levelName)
+    IEnumerator LoadAsynchronously(int levelIndex)
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(levelName);
+        AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
         loadingScreen.SetActive(true);
         while (!operation.isDone)
         {
@@ -39,7 +39,7 @@ public class LoadLevel : MonoBehaviour {
 
     IEnumerator RandomAsynchronously()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(Random.Range(1, 7));
+        AsyncOperation operation = SceneManager.LoadSceneAsync(Random.Range(1, 9));
         loadingScreen.SetActive(true);
         while (!operation.isDone)
         {

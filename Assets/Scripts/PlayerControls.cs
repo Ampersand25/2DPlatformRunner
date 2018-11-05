@@ -22,6 +22,10 @@ public class PlayerControls : MonoBehaviour {
     public static int deathCount1 = 0;
     public static int deathCount2 = 0;
     public static int deathCount3 = 0;
+    public static int deathCount4 = 0;
+    public static int deathCount5 = 0;
+    public static int deathCount6 = 0;
+    public static int deathCount7 = 0;
     public static int sceneIndex;
     private bool onGround;
     private bool jumping = false;
@@ -31,14 +35,21 @@ public class PlayerControls : MonoBehaviour {
     void Start () {
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
-        if(sceneIndex == 1)
+        if (sceneIndex == 1)
             transform.position = gm.lastCheckPointPos;
-        else if(sceneIndex == 2)
+        else if (sceneIndex == 2)
             transform.position = gm.lastCheckPointPos1;
         else if (sceneIndex == 3)
             transform.position = gm.lastCheckPointPos2;
         else if (sceneIndex == 4)
             transform.position = gm.lastCheckPointPos3;
+        else if (sceneIndex == 5)
+            transform.position = gm.lastCheckPointPos4;
+        else if (sceneIndex == 6)
+            transform.position = gm.lastCheckPointPos5;
+        else if (sceneIndex == 7)
+            transform.position = gm.lastCheckPointPos6;
+        else transform.position = gm.lastCheckPointPos7;
         Time.timeScale = 1f;
         rb = GetComponent<Rigidbody2D>();
     }
@@ -106,6 +117,30 @@ public class PlayerControls : MonoBehaviour {
                 gm.lastCheckPointPos3.y = 4.28f;
                 deathCount3 = 0;
             }
+            else if (SceneManager.GetActiveScene().buildIndex == 5)
+            {
+                gm.lastCheckPointPos4.x = -4.366f;
+                gm.lastCheckPointPos4.y = 4.28f;
+                deathCount4 = 0;
+            }
+            else if (SceneManager.GetActiveScene().buildIndex == 6)
+            {
+                gm.lastCheckPointPos5.x = -4.366f;
+                gm.lastCheckPointPos5.y = 4.28f;
+                deathCount5 = 0;
+            }
+            else if (SceneManager.GetActiveScene().buildIndex == 7)
+            {
+                gm.lastCheckPointPos6.x = -4.366f;
+                gm.lastCheckPointPos6.y = 4.28f;
+                deathCount6 = 0;
+            }
+            else
+            {
+                gm.lastCheckPointPos7.x = -4.366f;
+                gm.lastCheckPointPos7.y = 4.28f;
+                deathCount7 = 0;
+            }
             Music.SetActive(false);
             FindObjectOfType<GameManager>().CompleteLevel();
         }
@@ -120,6 +155,13 @@ public class PlayerControls : MonoBehaviour {
                 ++deathCount2;
             else if (SceneManager.GetActiveScene().buildIndex == 4)
                 ++deathCount3;
+            else if (SceneManager.GetActiveScene().buildIndex == 5)
+                ++deathCount4;
+            else if (SceneManager.GetActiveScene().buildIndex == 6)
+                ++deathCount5;
+            else if (SceneManager.GetActiveScene().buildIndex == 7)
+                ++deathCount6;
+            else ++deathCount7;
             FindObjectOfType<GameManager>().EndGame();
         }
     }

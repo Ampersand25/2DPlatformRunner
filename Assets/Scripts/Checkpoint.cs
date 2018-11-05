@@ -34,5 +34,25 @@ public class Checkpoint : MonoBehaviour {
             gm.lastCheckPointPos3.x = transform.position.x;
             gm.lastCheckPointPos3.y = 4.28f;
         }
+        else if (other.CompareTag("Player") && PlayerControls.sceneIndex == 5)
+        {
+            gm.lastCheckPointPos4.x = transform.position.x;
+            gm.lastCheckPointPos4.y = 4.28f;
+        }
+        else if (other.CompareTag("Player") && PlayerControls.sceneIndex == 6)
+        {
+            gm.lastCheckPointPos5.x = transform.position.x;
+            gm.lastCheckPointPos5.y = 4.28f;
+        }
+        else if (other.CompareTag("Player") && PlayerControls.sceneIndex == 7)
+        {
+            gm.lastCheckPointPos6.x = transform.position.x;
+            gm.lastCheckPointPos6.y = 4.28f;
+        }
+        else
+        {
+            gm.lastCheckPointPos7.x = transform.position.x;
+            gm.lastCheckPointPos7.y = 4.28f;
+        }
     }
 }
