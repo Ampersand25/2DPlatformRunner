@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class LoadLevel : MonoBehaviour {
 
     public GameObject loadingScreen;
+    public static GameObject fadingAnim;
     public Slider slider;
     public Text progressText;
     public Animator transitionAnim;

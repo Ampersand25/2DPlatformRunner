@@ -11,11 +11,13 @@ public class SceneLoader : MonoBehaviour {
 
     public void LoadMenu()
     {
+        AdManager.lastDeathCount = PlayerControls.ad;
         StartCoroutine(LoadMainMenuAsynchronously());
     }
 
     public void LoadNextLevel()
     {
+        AdManager.lastDeathCount = PlayerControls.ad;
         StartCoroutine(LoadNextLevelAsynchronously());
     }
 

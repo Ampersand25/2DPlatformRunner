@@ -6,15 +6,14 @@ using UnityEngine;
 public class AdManager : MonoBehaviour {
 
     private bool ok = false;
-    private int lastDeathCount = 0;
+    public static int lastDeathCount = 0;
 
     // Use this for initialization
     void Start() {
-        if (PlayerControls.ad % 5 == 0 && PlayerControls.ad != 0 && lastDeathCount != PlayerControls.ad)
+        if (PlayerControls.ad % 5 == 0 && PlayerControls.ad != 0 && lastDeathCount != PlayerControls.ad && SettingsMenu.adsActivated == true)
         {
             if (Advertisement.IsReady("video"))
             {
-                lastDeathCount = PlayerControls.ad;
                 Time.timeScale = 0f;
                 PauseMenu.GameIsPaused = true;
                 ok = true;
@@ -27,6 +26,7 @@ public class AdManager : MonoBehaviour {
     void Update() {
         if (Advertisement.isShowing == false && PauseMenu.GameIsPaused && ok)
         {
+            lastDeathCount = PlayerControls.ad;
             Time.timeScale = 1f;
             PauseMenu.GameIsPaused = false;
             ok = false;

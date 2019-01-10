@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerControls : MonoBehaviour {
 
+    public GameObject Sound;
+    public GameObject NoSound;
     public Rigidbody2D rb;
     public Transform groundCheck;
     public Transform startPosition;
@@ -33,6 +35,9 @@ public class PlayerControls : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        if (AudioListener.pause == false)
+            Sound.SetActive(true);
+        else NoSound.SetActive(true);
         sceneIndex = SceneManager.GetActiveScene().buildIndex;
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         if (sceneIndex == 1)
@@ -93,6 +98,7 @@ public class PlayerControls : MonoBehaviour {
         }
         if(rb.position.x >= endDistance)
         {
+            ad = 0;
             if (SceneManager.GetActiveScene().buildIndex == 1)
             {
                 gm.lastCheckPointPos.x = -4.366f;
@@ -146,7 +152,8 @@ public class PlayerControls : MonoBehaviour {
         }
         if(rb.position.y <= fall)
         {
-            ++ad;
+            if (SettingsMenu.adsActivated == true)
+                ++ad;
             if (SceneManager.GetActiveScene().buildIndex == 1)
                 ++deathCount;
             else if (SceneManager.GetActiveScene().buildIndex == 2)

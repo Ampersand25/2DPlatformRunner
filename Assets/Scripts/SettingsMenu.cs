@@ -9,9 +9,22 @@ public class SettingsMenu : MonoBehaviour {
     public GameObject Music;
     public GameObject Sound;
     public GameObject NoSound;
-
+    public GameObject Ads;
+    public GameObject NoAds;
+    public static bool adsActivated = true;
+    
     // Use this for initialization
     void Start() {
+        if (adsActivated == false)
+        {
+            Ads.SetActive(false);
+            NoAds.SetActive(true);
+        }
+        else
+        {
+            NoAds.SetActive(false);
+            Ads.SetActive(true);
+        }
         if (AudioListener.pause == false)
         {
             NoSound.SetActive(false);
@@ -67,6 +80,21 @@ public class SettingsMenu : MonoBehaviour {
             }
             AudioListener.pause = !AudioListener.pause;
         }
+    }
+
+    public void disableAds()
+    {
+        if (adsActivated == false)
+        {
+            NoAds.SetActive(false);
+            Ads.SetActive(true);
+        }
+        else
+        {
+            Ads.SetActive(false);
+            NoAds.SetActive(true);
+        }
+        adsActivated = !adsActivated;
     }
 
     public void GameIsPausedToFalse()

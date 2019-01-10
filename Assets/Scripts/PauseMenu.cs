@@ -12,6 +12,7 @@ public class PauseMenu : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        Time.timeScale = 1f;
         GameIsPaused = false;
     }
 
