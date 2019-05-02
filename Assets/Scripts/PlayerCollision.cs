@@ -6,6 +6,8 @@ public class PlayerCollision : MonoBehaviour {
     {
         if(collisionInfo.collider.tag == "Obstacle")
         {
+            if(SettingsMenu.vibrationActivated == true)
+                Handheld.Vibrate();
             ++PlayerControls.ad;
             if(PlayerControls.sceneIndex == 3)
                 ++PlayerControls.deathCount2;

@@ -86,8 +86,8 @@ public class Score : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        scoreText.text = (player.position.x + 4.35).ToString("0");
-        number = (int)(player.position.x + 4.35);
+        scoreText.text = ((int)(player.position.x + 4.35 + 1)).ToString("0");
+        number = (int)(player.position.x + 4.35 + 1);
         /*
         if (sceneIndex == 0 && number > hs)
         {
@@ -130,58 +130,58 @@ public class Score : MonoBehaviour {
             PlayerPrefs.SetInt("HS7", hs7);
         }
         */
-        if(sceneIndex == 0 && number > DataControl.hs)
+        if(sceneIndex == 0 && number >= DataControl.hs)
         {
             DataControl.hs = number;
         }
-        else if (sceneIndex == 1 && number > DataControl.hs1)
+        else if (sceneIndex == 1 && number >= DataControl.hs1)
         {
             DataControl.hs1 = number;
         }
-        else if (sceneIndex == 2 && number > DataControl.hs2)
+        else if (sceneIndex == 2 && number >= DataControl.hs2)
         {
             DataControl.hs2 = number;
         }
-        else if (sceneIndex == 3 && number > DataControl.hs3)
+        else if (sceneIndex == 3 && number >= DataControl.hs3)
         {
             DataControl.hs3 = number;
         }
-        if (sceneIndex == 0 && number > PlayerPrefs.GetInt("HighScore", 0))
+        if (sceneIndex == 0 && number >= PlayerPrefs.GetInt("HighScore", 0))
         {
             PlayerPrefs.SetInt("HighScore", number);
             highScore.text = number.ToString();
         }
-        else if (sceneIndex == 1 && number > PlayerPrefs.GetInt("HighScore1", 0))
+        else if (sceneIndex == 1 && number >= PlayerPrefs.GetInt("HighScore1", 0))
         {
             PlayerPrefs.SetInt("HighScore1", number);
             highScore1.text = number.ToString();
         }
-        else if (sceneIndex == 2 && number > PlayerPrefs.GetInt("HighScore2", 0))
+        else if (sceneIndex == 2 && number >= PlayerPrefs.GetInt("HighScore2", 0))
         {
             PlayerPrefs.SetInt("HighScore2", number);
             highScore2.text = number.ToString();
         }
-        else if (sceneIndex == 3 && number > PlayerPrefs.GetInt("HighScore3", 0))
+        else if (sceneIndex == 3 && number >= PlayerPrefs.GetInt("HighScore3", 0))
         {
             PlayerPrefs.SetInt("HighScore3", number);
             highScore3.text = number.ToString();
         }
-        else if (sceneIndex == 4 && number > PlayerPrefs.GetInt("HighScore4", 0))
+        else if (sceneIndex == 4 && number >= PlayerPrefs.GetInt("HighScore4", 0))
         {
             PlayerPrefs.SetInt("HighScore4", number);
             highScore4.text = number.ToString();
         }
-        else if (sceneIndex == 5 && number > PlayerPrefs.GetInt("HighScore5", 0))
+        else if (sceneIndex == 5 && number >= PlayerPrefs.GetInt("HighScore5", 0))
         {
             PlayerPrefs.SetInt("HighScore5", number);
             highScore5.text = number.ToString();
         }
-        else if (sceneIndex == 6 && number > PlayerPrefs.GetInt("HighScore6", 0))
+        else if (sceneIndex == 6 && number >= PlayerPrefs.GetInt("HighScore6", 0))
         {
             PlayerPrefs.SetInt("HighScore6", number);
             highScore6.text = number.ToString();
         }
-        else if (sceneIndex == 7 && number > PlayerPrefs.GetInt("HighScore7", 0))
+        else if (sceneIndex == 7 && number >= PlayerPrefs.GetInt("HighScore7", 0))
         {
             PlayerPrefs.SetInt("HighScore7", number);
             highScore7.text = number.ToString();

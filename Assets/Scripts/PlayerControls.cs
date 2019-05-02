@@ -152,6 +152,8 @@ public class PlayerControls : MonoBehaviour {
         }
         if(rb.position.y <= fall)
         {
+            if (SettingsMenu.vibrationActivated == true)
+                Handheld.Vibrate();
             if (SettingsMenu.adsActivated == true)
                 ++ad;
             if (SceneManager.GetActiveScene().buildIndex == 1)

@@ -12,7 +12,10 @@ public class SettingsMenu : MonoBehaviour {
     public GameObject Ads;
     public GameObject NoAds;
     public static bool adsActivated = true;
-    
+    public GameObject Vibration;
+    public GameObject NoVibration;
+    public static bool vibrationActivated = true;
+
     // Use this for initialization
     void Start() {
         if (adsActivated == false)
@@ -24,6 +27,16 @@ public class SettingsMenu : MonoBehaviour {
         {
             NoAds.SetActive(false);
             Ads.SetActive(true);
+        }
+        if (vibrationActivated == false)
+        {
+            Vibration.SetActive(false);
+            NoVibration.SetActive(true);
+        }
+        else
+        {
+            NoVibration.SetActive(false);
+            Vibration.SetActive(true);
         }
         if (AudioListener.pause == false)
         {
@@ -95,6 +108,21 @@ public class SettingsMenu : MonoBehaviour {
             NoAds.SetActive(true);
         }
         adsActivated = !adsActivated;
+    }
+
+    public void disableVibration()
+    {
+        if (vibrationActivated == false)
+        {
+            NoVibration.SetActive(false);
+            Vibration.SetActive(true);
+        }
+        else
+        {
+            Vibration.SetActive(false);
+            NoVibration.SetActive(true);
+        }
+        vibrationActivated = !vibrationActivated;
     }
 
     public void GameIsPausedToFalse()
