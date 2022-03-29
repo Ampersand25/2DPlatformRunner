@@ -33,3 +33,10 @@ sysinfo.txt
 
 # Builds
 *.unitypackage
+
+*.shader
+*.cginc
+*.glslinc
+*.compute
+*.cg
+*.hlsl
