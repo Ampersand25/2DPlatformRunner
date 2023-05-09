@@ -1,3 +1,4 @@
+<strong>Application summary</strong>:
 - a 2D Platform Runner created in Unity using C# programming language
 - the application uses free assets from the Unity Asset Store
 - there are 4 playable levels
