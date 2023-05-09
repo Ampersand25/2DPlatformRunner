@@ -15,3 +15,4 @@
 - the user can also turn down or up the volume of the music (the is also the option to pause/play the music)
 - there is also a vibrate mode for phone (the vibration happens when the character dies) which can be set on or off (in the settings menu)
 - the user can restart the run or pause the level
+- the app also uses particle system in some levels (for simulating the rain for example)
