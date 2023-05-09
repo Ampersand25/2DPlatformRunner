@@ -18,4 +18,4 @@
 - the app also uses particle system in some levels (for simulating the rain for example)
 - there is also a credits window/menu that can be accessed from the main menu (by pressing the "©" located in the upper right corner)
 - the credits window contains links to my GitHub, LinkedIn and itch.io profiles
-- the app also contains loading screens for transitioning between scenes
+- the app also contains loading screens for transitioning between different scenes
