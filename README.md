@@ -1,5 +1,5 @@
 <strong>Application summary</strong>:
-- a 2D Platform Runner created in Unity using C# programming language
+- a 2D Platform Runner made in Unity using C# programming language
 - the app can be run on a phone with Android or on a PC (using BlueStacks program that can be downloaded from the following link: https://www.bluestacks.com/download.html)
 - the application uses free assets from the Unity Asset Store
 - there are 4 playable levels
@@ -16,3 +16,6 @@
 - there is also a vibrate mode for phone (the vibration happens when the character dies) which can be set on or off (in the settings menu)
 - the user can restart the run or pause the level
 - the app also uses particle system in some levels (for simulating the rain for example)
+- there is also a credits window/menu that can be accessed from the main menu (by pressing the "©" located in the upper right corner)
+- the credits window contains links to my GitHub, LinkedIn and itch.io profiles
+- the app also contains loading screens for transitioning between scenes
