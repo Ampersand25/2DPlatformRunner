@@ -25,3 +25,49 @@
 - the credits window contains links to my GitHub, LinkedIn and itch.io profiles
 - the app also contains loading screens for transitioning between different scenes
 - there are 3 animations (one for walking, one for jumping and another one for falling) for each playable character
+
+<strong>Below are some screenshots taked while playing the game (on Windows using BlueStacks)</strong>:
+
+![1st image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss1.png)
+<p align="center"><strong>Image 1</strong></p>
+<hr>
+
+![2nd image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss2.png)
+<p align="center"><strong>Image 2</strong></p>
+<hr>
+
+![3rd image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss3.png)
+<p align="center"><strong>Image 3</strong></p>
+<hr>
+
+![4th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss4.png)
+<p align="center"><strong>Image 4</strong></p>
+<hr>
+
+![5th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss5.png)
+<p align="center"><strong>Image 5</strong></p>
+<hr>
+
+![6th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss6.png)
+<p align="center"><strong>Image 6</strong></p>
+<hr>
+
+![7th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss7.png)
+<p align="center"><strong>Image 7</strong></p>
+<hr>
+
+![8th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss8.png)
+<p align="center"><strong>Image 8</strong></p>
+<hr>
+
+![9th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss9.png)
+<p align="center"><strong>Image 9</strong></p>
+<hr>
+
+![10th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss10.png)
+<p align="center"><strong>Image 10</strong></p>
+<hr>
+
+![11 image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss11.png)
+<p align="center"><strong>Image 11</strong></p>
+<hr>
