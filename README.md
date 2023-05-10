@@ -9,6 +9,9 @@
 - level 2 and level 4 have a cat character
 - there is also different music for all available levels
 - the user can play a specific level or a random one (from the available levels (level 1, 2, 3 and 4))
+- each level contains more checkpoints (if the character falls off a platform or dies within a level, they will respawn at the last activated checkpoint within that level)
+- checkpoints can be activated by reaching specific locations
+- the levels are NOT randomly generated
 - the app contains ads (Unity ads), but there is an option that can disable them
 - there is also a score system that displays the current score and the best/highest score for each level (the best score can be reseted)
 - there is also a system that displays the number of deaths per run (if the number of deaths is a multiple of 5 then an ad will be played)
@@ -19,3 +22,4 @@
 - there is also a credits window/menu that can be accessed from the main menu (by pressing the "©" located in the upper right corner)
 - the credits window contains links to my GitHub, LinkedIn and itch.io profiles
 - the app also contains loading screens for transitioning between different scenes
+- there are 3 animations (one for walking, one for jumping and another one for falling) for each playable character
