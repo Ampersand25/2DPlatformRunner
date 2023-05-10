@@ -15,7 +15,7 @@
 - each level has a different length
 - in order to complete a level the character must cross the finish line
 - the app contains ads (Unity ads), but there is an option that can disable them
-- there is also a score system that displays the current score and the best/highest score for each level (the best score can be reseted)
+- there is also a score system that displays the current score (distance covered) and the best/highest score for each level (the best score can be reseted)
 - there is also a system that displays the number of deaths per run (if the number of deaths is a multiple of 5 then an ad will be played)
 - the user can also turn down or up the volume of the music (the is also the option to pause/play the music)
 - there is also a vibrate mode for phone (the vibration happens when the character dies) which can be set on or off (in the settings menu)
@@ -29,45 +29,45 @@
 <strong>Below are some screenshots taked while playing the game (on Windows using BlueStacks)</strong>:
 
 ![1st image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss1.png)
-<p align="center"><strong>Image 1</strong></p>
+<p align="center"><strong>Image 1</strong> - main menu of the game</p>
 <hr>
 
 ![2nd image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss2.png)
-<p align="center"><strong>Image 2</strong></p>
+<p align="center"><strong>Image 2</strong> - options/setting menu (here the user can change the volume of the music or/and set on/off the ads or/and the vibration)</p>
 <hr>
 
 ![3rd image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss3.png)
-<p align="center"><strong>Image 3</strong></p>
+<p align="center"><strong>Image 3</strong> - close/exit confirmation window</p>
 <hr>
 
 ![4th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss4.png)
-<p align="center"><strong>Image 4</strong></p>
+<p align="center"><strong>Image 4</strong> - credits menu where the user can access one of my profiles (itch.io, GitHub or LinkedIn)</p>
 <hr>
 
 ![5th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss5.png)
-<p align="center"><strong>Image 5</strong></p>
+<p align="center"><strong>Image 5</strong> - level selection menu (in this window the user can choose which level he wants to play)</p>
 <hr>
 
 ![6th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss6.png)
-<p align="center"><strong>Image 6</strong></p>
+<p align="center"><strong>Image 6</strong> - loading screen used to transition between scenes (from main menu to one level for example)</p>
 <hr>
 
 ![7th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss7.png)
-<p align="center"><strong>Image 7</strong></p>
+<p align="center"><strong>Image 7</strong> - level one (1) of the game (containing the first playable character) and jumping animation</p>
 <hr>
 
 ![8th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss8.png)
-<p align="center"><strong>Image 8</strong></p>
+<p align="center"><strong>Image 8</strong> - pause menu (the player can choose to pause the game at any time during a level)</p>
 <hr>
 
 ![9th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss9.png)
-<p align="center"><strong>Image 9</strong></p>
+<p align="center"><strong>Image 9</strong> - level two (2) of the game (containing the second and last playable character) and falling animation (the falling animation si slightly different than the jumping animation)</p>
 <hr>
 
 ![10th image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss10.png)
-<p align="center"><strong>Image 10</strong></p>
+<p align="center"><strong>Image 10</strong> - level three (3) of the game (containing the first playable character) and walking animation</p>
 <hr>
 
 ![11 image](https://github.com/Ampersand25/2DPlatformRunner/blob/master/Screenshots/ss11.png)
-<p align="center"><strong>Image 11</strong></p>
+<p align="center"><strong>Image 11</strong> - level four (4) of the game (containing the second and last playable character) and jumping animation (in the picture the character is jumping over a deadly block)</p>
 <hr>
