@@ -12,6 +12,8 @@
 - each level contains more checkpoints (if the character falls off a platform or dies within a level, they will respawn at the last activated checkpoint within that level)
 - checkpoints can be activated by reaching specific locations
 - the levels are NOT randomly generated
+- each level has a different length
+- in order to complete a level the character must cross the finish line
 - the app contains ads (Unity ads), but there is an option that can disable them
 - there is also a score system that displays the current score and the best/highest score for each level (the best score can be reseted)
 - there is also a system that displays the number of deaths per run (if the number of deaths is a multiple of 5 then an ad will be played)
