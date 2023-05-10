@@ -25,6 +25,8 @@
 - the credits window contains links to my GitHub, LinkedIn and itch.io profiles
 - the app also contains loading screens for transitioning between different scenes
 - there are 3 animations (one for walking, one for jumping and another one for falling) for each playable character
+- the application also contains a documentation (in Romanian language) describing how to play the game (the documentation also contains some screenshots taken while playing the game)
+- the name of the documentation file is "Documentatie.pdf"
 
 <strong>Below are some screenshots taked while playing the game (on Windows using BlueStacks)</strong>:
 
