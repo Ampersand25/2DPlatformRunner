@@ -14,6 +14,8 @@
 - the levels are NOT randomly generated
 - each level has a different length
 - in order to complete a level the character must cross the finish line
+- the character is able to perform a double jump
+- the jump only happens when the player releases the click and not on pressing the click
 - the app contains ads (Unity ads), but there is an option that can disable them
 - there is also a score system that displays the current score (distance covered) and the best/highest score for each level (the best score can be reseted)
 - there is also a system that displays the number of deaths per run (if the number of deaths is a multiple of 5 then an ad will be played)
