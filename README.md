@@ -1,4 +1,4 @@
-<strong>Application summary</strong>:
+<strong>Useful information about the application</strong>:
 - a 2D Platform Runner made in Unity using C# programming language
 - the app can be run on a phone with Android or on a PC (using BlueStacks program that can be downloaded from the following link: https://www.bluestacks.com/download.html)
 - the application uses free assets from the Unity Asset Store
